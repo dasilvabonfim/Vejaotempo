@@ -1,31 +1,25 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Aplicativo de tempo
 
-Currently, two official plugins are available:
+Este projeto é uma aplicação React construída com a última versão do Vite e TypeScript. Ele utiliza a API da openweather.org para buscar dados meteorológicos em tempo real.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Funcionalidades
+- Funcionalidade de pesquisa para encontrar as condições meteorológicas atuais por cidade.
+- Exibe temperaturas mínimas e máximas em Celsius.
+- Mostra a porcentagem de umidade.
+- Carimbo de data/hora da última atualização para precisão dos dados.
 
-## Expanding the ESLint configuration
+## Como Usar
+1. Digite o nome da cidade na barra de pesquisa.
+2. Clique em 'Procurar' ou pressione enter.
+3. Veja os detalhes meteorológicos da cidade selecionada.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Instalação
+Para configurar este projeto localmente:
+1. Clone este repositório.
+2. Instale as dependências com `npm install`.
+3. Execute `npm run dev` para iniciar o servidor de desenvolvimento.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# Vejaotempo
+## Referência da API
+Dados fornecidos pela API da openweather.org.
